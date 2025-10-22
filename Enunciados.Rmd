@@ -19,6 +19,12 @@ knitr::kable(tabla_1)
 
 ```
 
+Resolver considerando las siguientes situaciones:
+
+  a) Beneficios (favorable)
+  
+  b) Costos (desfavorable)
+  
 ## Enunciado 2
 
 Una pareja quiere independizarse e irse a vivir juntos, por lo que están barajando opciones para hipotecarse. Las alternativas son las siguientes:
