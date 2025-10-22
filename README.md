@@ -1,7 +1,26 @@
 El repositorio contiene los siguientes archivos R Markdown: 
 
-Enuciados.Rmd: archivo con los enunciados de los problemas: un caso general de los criterios de decisión bajo incertidumbre y otro caso práctico, más concreto, sobre la elección de un modelo de hipotecación.
+Enuciados.Rmd: archivo con la formulación de los enunciados de los problemas: 
 
-Soluciones.Rmd: contiene los cálculos en R necesarios para la resolución de los ejercicios descritos en el anterior archivo, aplicando los criterios de Wald, Optimista, Hurwicz, Savage, Laplace y Punto Ideal.
+-Primer problema: caso general con una tabla de decisión que contiene valores arbitrarios.
+
+-Segundo problema: caso práctico y contextualizado, basado en una situación real sobre la elección de un modelo de hipotecación.
+
+
+Soluciones.Rmd: 
+Contiene los cálculos y resolución de los ejercicios descritos en Enunciados.Rmd. Se emplean los siguientes criterios de decisión bajo incertidumbre:
+
+Wald (pesimista)
+
+Optimista (Maximax)
+
+Hurwicz (índice de optimismo)
+
+Savage (minimización del arrepentimiento)
+
+Laplace (equiprobabilidad)
+
+Punto Ideal
+
 
 También cuenta con otro archivo (teoriadecision_funciones_incertidumbre.R) en el cual se encuentran las distintas funciones utilizadas para la aplicación de los criterios.
