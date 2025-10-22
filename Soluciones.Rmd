@@ -5,14 +5,12 @@ date: "2025-10-21"
 output: html_document
 ---
 ## title: "Soluciones"
-output: html_document
-date: "2025-10-20"
 
 ### A. Caso favorable
 
 ```{r}
 source("teoriadecision_funciones_incertidumbre.R")
-tabla_1 = crea.tablaX(c(,10,16,1, 8,
+tabla_1 = crea.tablaX(c(5,10,16,1, 8,
                       4,7,11,9, 13,
                       6,1,13,5, 12),
                     numalternativas =3,
@@ -125,7 +123,7 @@ tt(sol_des, rownames = TRUE)
 
 ```
 
-d3 es la alternativa más recomendada, por todos los criterios, ya que ha sido seleccionada como óptima en todas.
+d3 es la alternativa más recomendada, por todos los criterios, ya que ha sido seleccionada como óptima en todas, salvo los criterios de Wald pesimista y el optimista que ha empatado con d2 y d3 respectivamente.
 \newpage
 
 ## Problema 2
@@ -146,6 +144,9 @@ Al ir al banco, les han explicado los posibles escenarios que pueden ocurrir, pa
 Después de ver las alternativas, su objetivo es sopesar cual les conviene más para ahorrar todo lo que puedan.
 
 ```{r}
+
+#Para e1:
+
 tabla_2<-crea.tablaX(
   c(12000, 12000, 12000,12000,  # Hipoteca fija
     8000, 10000, 14000, 18000,  # Hipoteca variable
@@ -163,7 +164,7 @@ tt(solucion_2, rownames = TRUE)
 
 ```
 
-Según los distintos criterios, la pareja debería pedir una hipoteca a tipo fijo.
+Según los distintos criterios, la pareja debería pedir una hipoteca a tipo fijo, ya que ha salido óptima en 3 criterios distintos, en comparación a hipoteca mixta (2) y a hipoteca variable (1).
 
 ```{r}
 # Dibujos de Hurwicz
@@ -171,4 +172,4 @@ dibuja.criterio.Hurwicz(tabla_2, TRUE)
 
 ```
 
-Observando el gráfico, se aprecia  que la alternativa de hipoteca fija es óptima para alfas menores a 0.4 y la variable es mejor a aprtir de este nivel.
+Observando el gráfico, se aprecia  que la alternativa de hipoteca fija es óptima para alfas menores a 0.4 y la variable es mejor a aprtir de este nivel. La hipotéca mixta siempre se encuentra entre las dos, nunca es la mejor ni la peor de las alternativas.
